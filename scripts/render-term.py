@@ -180,33 +180,34 @@ def main() -> None:
 
     # boot: empty prompt, cursor blink
     for on in (True, False, True, False, True):
-        add(scene("", 0, 0, None, False, on, "cmd"), 12)
+        add(scene("", 0, 0, None, False, on, "cmd"), 22)
 
     # type `stack`
     typed = ""
     for ch in "stack":
         typed += ch
-        add(scene(typed, 0, 0, None, False, True, "cmd"), 5)
-    add(scene("stack", 0, 0, None, False, False, "cmd"), 10)
+        add(scene(typed, 0, 0, None, False, True, "cmd"), 11)
+    add(scene("stack", 0, 0, None, False, False, "cmd"), 22)
 
     # reveal stack, two lines at a time (name + detail)
     for n in range(1, len(STACK) + 1):
-        add(scene("stack", n, 0, None, False, False, "cmd"), 9 if STACK[n - 1][0] else 5)
+        add(scene("stack", n, 0, None, False, False, "cmd"), 18 if STACK[n - 1][0] else 11)
 
     # live feed ticks in
     for n in range(1, len(FEED) + 1):
-        add(scene("stack", len(STACK), n, None, False, False, "cmd"), 10)
+        add(scene("stack", len(STACK), n, None, False, False, "cmd"), 20)
 
     # type `status`
-    add(scene("stack", len(STACK), len(FEED), "", False, True, "status"), 14)
+    add(scene("stack", len(STACK), len(FEED), "", False, True, "status"), 28)
     typed = ""
     for ch in "status":
         typed += ch
-        add(scene("stack", len(STACK), len(FEED), typed, False, True, "status"), 5)
+        add(scene("stack", len(STACK), len(FEED), typed, False, True, "status"), 11)
 
-    # running + hold with blink
-    for on in (True, False, True, False, True, False, True, False, True):
-        add(scene("stack", len(STACK), len(FEED), "status", True, on, "end"), 16)
+    # hold: running + cursor blink. GIF delay is cheap; unique frames stay 2.
+    for _ in range(16):
+        add(scene("stack", len(STACK), len(FEED), "status", True, True, "end"), 42)
+        add(scene("stack", len(STACK), len(FEED), "status", True, False, "end"), 42)
 
     # last frame is the still
     final = scene("stack", len(STACK), len(FEED), "status", True, True, "end")
@@ -225,10 +226,12 @@ def main() -> None:
     list_path.write_text("\n".join(lines) + "\n")
 
     palette = FRAMES / "palette.png"
+    # Do not resample to a fixed fps. The last cut flattened the hold
+    # because fps=12 ignored per-frame duration.
     subprocess.run(
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path),
-            "-vf", "fps=12,scale=880:-1:flags=lanczos,palettegen=max_colors=48:stats_mode=diff",
+            "-vf", "scale=880:-1:flags=lanczos,palettegen=max_colors=48:stats_mode=diff",
             str(palette),
         ],
         check=True,
@@ -238,16 +241,18 @@ def main() -> None:
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(list_path),
             "-i", str(palette),
-            "-lavfi", "fps=12,scale=880:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=3",
+            "-lavfi", "scale=880:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=3",
+            "-vsync", "passthrough",
             "-loop", "0",
             str(OUT_GIF),
         ],
         check=True,
         capture_output=True,
     )
+    total_s = sum(cs for _, cs in timeline) / 100
     print(f"gif={OUT_GIF} bytes={OUT_GIF.stat().st_size}")
     print(f"png={OUT_PNG} bytes={OUT_PNG.stat().st_size}")
-    print(f"frames={len(timeline)}")
+    print(f"frames={len(timeline)} duration={total_s:.1f}s")
 
 
 if __name__ == "__main__":
