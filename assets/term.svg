@@ -1,37 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="720" viewBox="0 0 880 360" role="img" aria-label="braintied runtime">
-  <rect width="880" height="360" rx="14" fill="#0d1117"/>
-  <rect x="0.5" y="0.5" width="879" height="359" rx="14" fill="none" stroke="#30363d"/>
-  <rect width="880" height="40" rx="14" fill="#161b22"/>
-  <rect y="26" width="880" height="14" fill="#161b22"/>
-  <circle cx="22" cy="20" r="5" fill="#ff5f57"/>
-  <circle cx="40" cy="20" r="5" fill="#febc2e"/>
-  <circle cx="58" cy="20" r="5" fill="#28c840"/>
-  <text x="80" y="24" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="12">ga1ien@braintied</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="912" viewBox="0 0 880 456">
 
-  <text x="28" y="72" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">
-    <tspan fill="#8b949e">$</tspan><tspan dx="8" fill="#c9d1d9">whoami</tspan>
-  </text>
-  <text x="52" y="96" fill="#ccff00" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">got tired of waiting on other people</text>
-
-  <text x="28" y="136" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">
-    <tspan fill="#8b949e">$</tspan><tspan dx="8" fill="#c9d1d9">ps</tspan>
-  </text>
-  <text x="52" y="160" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">ora</text>
-  <text x="200" y="160" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">agent operating system</text>
-  <text x="52" y="182" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">watchtower</text>
-  <text x="200" y="182" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">every session, searchable</text>
-  <text x="52" y="204" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">sentigen</text>
-  <text x="200" y="204" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">system of record</text>
-  <text x="52" y="226" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">kit</text>
-  <text x="200" y="226" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">one companion, n brains</text>
-  <text x="52" y="248" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">kulti</text>
-  <text x="200" y="248" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">they watch it ship</text>
-
-  <text x="28" y="288" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">
-    <tspan fill="#8b949e">$</tspan><tspan dx="8" fill="#c9d1d9">uptime</tspan>
-  </text>
-  <text x="52" y="312" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">apr 2025</text>
-  <text x="200" y="312" fill="#c9d1d9" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">first line</text>
-  <text x="52" y="334" fill="#8b949e" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">now</text>
-  <text x="200" y="334" fill="#ccff00" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="15">people talk. agents ship.</text>
+  <rect width="880" height="456" rx="16" fill="#000000"/>
+  <rect x="0.75" y="0.75" width="878.5" height="454.5" rx="16" fill="none" stroke="#222"/>
+  <rect width="4" height="456" rx="2" fill="#ccff00"/>
+  <rect x="4" width="876" height="42" rx="16" fill="#0b0b0b"/>
+  <rect x="4" y="28" width="876" height="14" fill="#0b0b0b"/>
+  <circle cx="26" cy="21" r="5" fill="#ff5f57"/>
+  <circle cx="44" cy="21" r="5" fill="#febc2e"/>
+  <circle cx="62" cy="21" r="5" fill="#28c840"/>
+  <text x="84" y="25" fill="#666666" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="12">ga1ien@braintied</text>
+<text x="28" y="72" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14"><tspan fill="#3f3f3f">$</tspan><tspan dx="10" fill="#e8e8e8">stack</tspan></text><text x="28" y="108" fill="#8a8a8a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">ora</text>
+<text x="148" y="108" fill="#e4e4e4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">agent operating system</text>
+<text x="148" y="130" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">identities persist in cortex. machines do not.</text>
+<text x="28" y="152" fill="#8a8a8a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">watchtower</text>
+<text x="148" y="152" fill="#e4e4e4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">session intelligence</text>
+<text x="148" y="174" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">every session captured and searchable</text>
+<text x="28" y="196" fill="#8a8a8a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">sentigen</text>
+<text x="148" y="196" fill="#e4e4e4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">meetings, mail, crm, tasks</text>
+<text x="148" y="218" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">the company of record</text>
+<text x="28" y="240" fill="#8a8a8a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">kit</text>
+<text x="148" y="240" fill="#e4e4e4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">one companion over every product</text>
+<text x="148" y="262" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">same surface. different brains.</text>
+<text x="28" y="284" fill="#8a8a8a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">kulti</text>
+<text x="148" y="284" fill="#e4e4e4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">live stage</text>
+<text x="148" y="306" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">agents ship while people watch.</text><line x1="600" y1="64" x2="600" y2="428" stroke="#1a1a1a"/>
+<text x="620" y="80" fill="#ccff00" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="12">live</text>
+<text x="620" y="108" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">watchtower</text>
+<text x="620" y="126" fill="#d4d4d4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">session captured</text>
+<text x="620" y="152" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">ora</text>
+<text x="620" y="170" fill="#d4d4d4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">identity hydrated</text>
+<text x="620" y="196" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">sentigen</text>
+<text x="620" y="214" fill="#d4d4d4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">meeting closed</text>
+<text x="620" y="240" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">kit</text>
+<text x="620" y="258" fill="#d4d4d4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">surface composed</text>
+<text x="620" y="284" fill="#6a6a6a" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">kulti</text>
+<text x="620" y="302" fill="#d4d4d4" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="13">room live</text><text x="28" y="352" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14"><tspan fill="#3f3f3f">$</tspan><tspan dx="10" fill="#e8e8e8">status</tspan></text><text x="28" y="378" fill="#ccff00" font-family="Menlo, Monaco, ui-monospace, monospace" font-size="14">running</text><rect x="108" y="368" width="8" height="14" fill="#ccff00"/>
 </svg>

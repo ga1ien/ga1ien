@@ -1,3 +1,3 @@
 <p>
-  <img src="assets/term.png" width="880" alt="got tired of waiting on other people. ora, watchtower, sentigen, kit, kulti. apr 2025 first line. people talk. agents ship." />
+  <img src="assets/term.gif" width="880" alt="ora: agent operating system. watchtower: session intelligence. sentigen: meetings, mail, crm. kit: one companion. kulti: live stage. status: running." />
 </p>
